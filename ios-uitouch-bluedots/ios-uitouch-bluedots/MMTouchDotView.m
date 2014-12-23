@@ -9,6 +9,12 @@
 #import "MMTouchDotView.h"
 #import "MMTouchDotGestureRecognizer.h"
 
+@interface MMTouchDotGestureRecognizer (Private)
+
++(MMTouchDotGestureRecognizer*) sharedInstace;
+
+@end
+
 @implementation MMTouchDotView{
     MMTouchDotGestureRecognizer* touchGesture;
     NSMutableDictionary* dots;
@@ -16,22 +22,43 @@
     UIColor* dotColor;
 }
 
-- (id)initWithFrame:(CGRect)frame
-{
-    self = [super initWithFrame:frame];
-    if (self) {
+@synthesize dotColor;
+@synthesize dotWidth;
+
+- (id)initWithCoder:(NSCoder *)aDecoder{
+    if (self = [super initWithCoder:aDecoder]) {
         // Initialization code
-        self.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
-        touchGesture = [MMTouchDotGestureRecognizer sharedInstace];
-        [touchGesture setTouchDelegate:self];
-        dots = [NSMutableDictionary dictionary];
-        dotWidth = 20;
-        dotColor = [UIColor colorWithRed: 62.0/255.0 green: 151.0/255.0 blue: 0.8 alpha: 1.0];
-        self.userInteractionEnabled = YES;
-        self.backgroundColor = [UIColor clearColor];
-        self.opaque = NO;
+        [self finishInit];
     }
     return self;
+}
+
+- (id)initWithFrame:(CGRect)frame
+{
+    if (self = [super initWithFrame:frame]) {
+        // Initialization code
+        [self finishInit];
+    }
+    return self;
+}
+
+-(void) finishInit{
+    self.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
+    touchGesture = [MMTouchDotGestureRecognizer sharedInstace];
+    [touchGesture setTouchDelegate:self];
+    dots = [NSMutableDictionary dictionary];
+    self.dotWidth = 20;
+    self.dotColor = [UIColor colorWithRed: 62.0/255.0 green: 151.0/255.0 blue: 0.8 alpha: 1.0];
+    self.userInteractionEnabled = YES;
+    self.backgroundColor = [UIColor clearColor];
+    self.opaque = NO;
+}
+
+-(void) setDotColor:(UIColor *)_dotColor{
+    if(!_dotColor){
+        _dotColor = [UIColor colorWithRed: 62.0/255.0 green: 151.0/255.0 blue: 0.8 alpha: 1.0];
+    }
+    dotColor = _dotColor;
 }
 
 -(void) updateTouch:(UITouch*)t{

@@ -13,7 +13,9 @@
     __weak NSObject<MMTouchDotGestureRecognizerDelegate>* touchDelegate;
 }
 
-+(MMTouchDotGestureRecognizer*) sharedInstace;
+// don't initialize this class directly
+-(instancetype) init NS_UNAVAILABLE;
+-(instancetype) initWithTarget:(id)target action:(SEL)action NS_UNAVAILABLE;
 
 @property (nonatomic, weak) NSObject<MMTouchDotGestureRecognizerDelegate>* touchDelegate;
 

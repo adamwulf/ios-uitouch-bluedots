@@ -17,7 +17,15 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    // create the blue dot view
     MMTouchDotView* blueDots = [[MMTouchDotView alloc] initWithFrame:self.window.bounds];
+    
+    // optionally set the dot color, defaults to blue
+    // blueDots.dotColor = [UIColor redColor];
+    // optionally set the dot width, defaults to 20
+    // blueDots.dotWidth = 40;
+    
+    // add the view to the window to make sure it's always visible
     [self.window addSubview:blueDots];
     
     // Override point for customization after application launch.

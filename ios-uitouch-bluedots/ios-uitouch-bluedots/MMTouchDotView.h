@@ -11,4 +11,9 @@
 
 @interface MMTouchDotView : UIView<MMTouchDotGestureRecognizerDelegate>
 
+// 
+@property (nonatomic) UIColor* dotColor;
+
+@property (nonatomic) CGFloat dotWidth;
+
 @end

@@ -24,4 +24,9 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(IBAction) didTapButton:(id)sender{
+    UIActivityViewController *activityViewController = [[UIActivityViewController alloc] initWithActivityItems:@[@"Just a sample UI to show the blue dots!"] applicationActivities:nil];
+    [self presentViewController:activityViewController animated:YES completion:nil];
+}
+
 @end

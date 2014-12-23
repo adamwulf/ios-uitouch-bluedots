@@ -34,7 +34,7 @@ static MMTouchDotGestureRecognizer* _instance = nil;
 
 +(MMTouchDotGestureRecognizer*) sharedInstace{
     if(!_instance){
-        _instance = [[MMTouchDotGestureRecognizer alloc]init];
+        _instance = [[[MMTouchDotGestureRecognizer class] alloc] init];
         _instance.delegate = _instance;
     }
     return _instance;
