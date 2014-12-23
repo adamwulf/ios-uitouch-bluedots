@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "MMTouchDotView.h"
 
 @interface AppDelegate ()
 
@@ -16,6 +17,9 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    MMTouchDotView* blueDots = [[MMTouchDotView alloc] initWithFrame:self.window.bounds];
+    [self.window addSubview:blueDots];
+    
     // Override point for customization after application launch.
     return YES;
 }

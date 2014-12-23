@@ -13,18 +13,9 @@
 		6612C5111A4A1AB800C51E45 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6612C50F1A4A1AB800C51E45 /* Main.storyboard */; };
 		6612C5131A4A1AB800C51E45 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6612C5121A4A1AB800C51E45 /* Images.xcassets */; };
 		6612C5161A4A1AB800C51E45 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6612C5141A4A1AB800C51E45 /* LaunchScreen.xib */; };
-		6612C5221A4A1AB800C51E45 /* ios_uitouch_bluedotsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6612C5211A4A1AB800C51E45 /* ios_uitouch_bluedotsTests.m */; };
+		6612C5311A4A209B00C51E45 /* MMTouchDotGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6612C52D1A4A209B00C51E45 /* MMTouchDotGestureRecognizer.m */; };
+		6612C5321A4A209B00C51E45 /* MMTouchDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6612C5301A4A209B00C51E45 /* MMTouchDotView.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		6612C51C1A4A1AB800C51E45 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6612C4FA1A4A1AB800C51E45 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6612C5011A4A1AB800C51E45;
-			remoteInfo = "ios-uitouch-bluedots";
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		6612C5021A4A1AB800C51E45 /* ios-uitouch-bluedots.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-uitouch-bluedots.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -37,20 +28,15 @@
 		6612C5101A4A1AB800C51E45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6612C5121A4A1AB800C51E45 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6612C5151A4A1AB800C51E45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		6612C51B1A4A1AB800C51E45 /* ios-uitouch-bluedotsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios-uitouch-bluedotsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6612C5201A4A1AB800C51E45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6612C5211A4A1AB800C51E45 /* ios_uitouch_bluedotsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ios_uitouch_bluedotsTests.m; sourceTree = "<group>"; };
+		6612C52C1A4A209B00C51E45 /* MMTouchDotGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMTouchDotGestureRecognizer.h; sourceTree = "<group>"; };
+		6612C52D1A4A209B00C51E45 /* MMTouchDotGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMTouchDotGestureRecognizer.m; sourceTree = "<group>"; };
+		6612C52E1A4A209B00C51E45 /* MMTouchDotGestureRecognizerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMTouchDotGestureRecognizerDelegate.h; sourceTree = "<group>"; };
+		6612C52F1A4A209B00C51E45 /* MMTouchDotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMTouchDotView.h; sourceTree = "<group>"; };
+		6612C5301A4A209B00C51E45 /* MMTouchDotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMTouchDotView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		6612C4FF1A4A1AB800C51E45 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6612C5181A4A1AB800C51E45 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -64,7 +50,6 @@
 			isa = PBXGroup;
 			children = (
 				6612C5041A4A1AB800C51E45 /* ios-uitouch-bluedots */,
-				6612C51E1A4A1AB800C51E45 /* ios-uitouch-bluedotsTests */,
 				6612C5031A4A1AB800C51E45 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -73,7 +58,6 @@
 			isa = PBXGroup;
 			children = (
 				6612C5021A4A1AB800C51E45 /* ios-uitouch-bluedots.app */,
-				6612C51B1A4A1AB800C51E45 /* ios-uitouch-bluedotsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -81,6 +65,7 @@
 		6612C5041A4A1AB800C51E45 /* ios-uitouch-bluedots */ = {
 			isa = PBXGroup;
 			children = (
+				6612C52B1A4A206200C51E45 /* blue-dots */,
 				6612C5091A4A1AB800C51E45 /* AppDelegate.h */,
 				6612C50A1A4A1AB800C51E45 /* AppDelegate.m */,
 				6612C50C1A4A1AB800C51E45 /* ViewController.h */,
@@ -102,21 +87,16 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		6612C51E1A4A1AB800C51E45 /* ios-uitouch-bluedotsTests */ = {
+		6612C52B1A4A206200C51E45 /* blue-dots */ = {
 			isa = PBXGroup;
 			children = (
-				6612C5211A4A1AB800C51E45 /* ios_uitouch_bluedotsTests.m */,
-				6612C51F1A4A1AB800C51E45 /* Supporting Files */,
+				6612C52C1A4A209B00C51E45 /* MMTouchDotGestureRecognizer.h */,
+				6612C52D1A4A209B00C51E45 /* MMTouchDotGestureRecognizer.m */,
+				6612C52E1A4A209B00C51E45 /* MMTouchDotGestureRecognizerDelegate.h */,
+				6612C52F1A4A209B00C51E45 /* MMTouchDotView.h */,
+				6612C5301A4A209B00C51E45 /* MMTouchDotView.m */,
 			);
-			path = "ios-uitouch-bluedotsTests";
-			sourceTree = "<group>";
-		};
-		6612C51F1A4A1AB800C51E45 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				6612C5201A4A1AB800C51E45 /* Info.plist */,
-			);
-			name = "Supporting Files";
+			name = "blue-dots";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,24 +119,6 @@
 			productReference = 6612C5021A4A1AB800C51E45 /* ios-uitouch-bluedots.app */;
 			productType = "com.apple.product-type.application";
 		};
-		6612C51A1A4A1AB800C51E45 /* ios-uitouch-bluedotsTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 6612C5281A4A1AB900C51E45 /* Build configuration list for PBXNativeTarget "ios-uitouch-bluedotsTests" */;
-			buildPhases = (
-				6612C5171A4A1AB800C51E45 /* Sources */,
-				6612C5181A4A1AB800C51E45 /* Frameworks */,
-				6612C5191A4A1AB800C51E45 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				6612C51D1A4A1AB800C51E45 /* PBXTargetDependency */,
-			);
-			name = "ios-uitouch-bluedotsTests";
-			productName = "ios-uitouch-bluedotsTests";
-			productReference = 6612C51B1A4A1AB800C51E45 /* ios-uitouch-bluedotsTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -168,10 +130,6 @@
 				TargetAttributes = {
 					6612C5011A4A1AB800C51E45 = {
 						CreatedOnToolsVersion = 6.1.1;
-					};
-					6612C51A1A4A1AB800C51E45 = {
-						CreatedOnToolsVersion = 6.1.1;
-						TestTargetID = 6612C5011A4A1AB800C51E45;
 					};
 				};
 			};
@@ -189,7 +147,6 @@
 			projectRoot = "";
 			targets = (
 				6612C5011A4A1AB800C51E45 /* ios-uitouch-bluedots */,
-				6612C51A1A4A1AB800C51E45 /* ios-uitouch-bluedotsTests */,
 			);
 		};
 /* End PBXProject section */
@@ -205,13 +162,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6612C5191A4A1AB800C51E45 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -219,29 +169,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6612C5321A4A209B00C51E45 /* MMTouchDotView.m in Sources */,
 				6612C50E1A4A1AB800C51E45 /* ViewController.m in Sources */,
 				6612C50B1A4A1AB800C51E45 /* AppDelegate.m in Sources */,
 				6612C5081A4A1AB800C51E45 /* main.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6612C5171A4A1AB800C51E45 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6612C5221A4A1AB800C51E45 /* ios_uitouch_bluedotsTests.m in Sources */,
+				6612C5311A4A209B00C51E45 /* MMTouchDotGestureRecognizer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		6612C51D1A4A1AB800C51E45 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 6612C5011A4A1AB800C51E45 /* ios-uitouch-bluedots */;
-			targetProxy = 6612C51C1A4A1AB800C51E45 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		6612C50F1A4A1AB800C51E45 /* Main.storyboard */ = {
@@ -359,40 +295,6 @@
 			};
 			name = Release;
 		};
-		6612C5291A4A1AB900C51E45 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "ios-uitouch-bluedotsTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ios-uitouch-bluedots.app/ios-uitouch-bluedots";
-			};
-			name = Debug;
-		};
-		6612C52A1A4A1AB900C51E45 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "ios-uitouch-bluedotsTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ios-uitouch-bluedots.app/ios-uitouch-bluedots";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -410,14 +312,6 @@
 			buildConfigurations = (
 				6612C5261A4A1AB900C51E45 /* Debug */,
 				6612C5271A4A1AB900C51E45 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		6612C5281A4A1AB900C51E45 /* Build configuration list for PBXNativeTarget "ios-uitouch-bluedotsTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				6612C5291A4A1AB900C51E45 /* Debug */,
-				6612C52A1A4A1AB900C51E45 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
